@@ -106,7 +106,7 @@ WORD ibm_chdir(BYTE const *path);
 WORD cdecl Do_Open_Error(FileErrorType errormsgnum, BYTE const *file_name);
 VOID cdecl Do_IO_Error(FileErrorType errormsgnum, BYTE const *filename);
 LONG cdecl Read_File_With_Recovery( WORD handle, VOID *buf, UWORD bytes );
-int cdecl Open_File_With_Recovery( BYTE const *file_name, unsigned int mode );
+int cdecl Open_File_With_Recovery( char const *file_name, unsigned int mode );
 BOOL cdecl Cache_File(WORD index, WORD file_handle);
 
 

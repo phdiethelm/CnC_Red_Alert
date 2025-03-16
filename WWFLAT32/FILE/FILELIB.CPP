@@ -226,7 +226,7 @@ LONG cdecl Read_File_With_Recovery( WORD handle, VOID *buf, UWORD bytes )
  * HISTORY:                                                                *
  *   02/16/1993  QY : Created.                                             *
  *=========================================================================*/
-WORD cdecl Open_File_With_Recovery( BYTE const *file_name, UWORD mode )
+int cdecl Open_File_With_Recovery( char const *file_name, unsigned int mode )
 {
 	WORD handle;
 

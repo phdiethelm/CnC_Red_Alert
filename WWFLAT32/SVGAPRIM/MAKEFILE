@@ -165,7 +165,7 @@ all:	$(LIB_DIR)\$(PROJ_NAME).lib .SYMBOLIC
 # All headers & source files are copied into WWFLAT\SRCDEBUG, for debugging
 #---------------------------------------------------------------------------
 $(LIB_DIR)\$(PROJ_NAME).lib: $(OBJECTS) objects.lbc
-	 copy *.h   $(%WWFLAT)\include 
+	 #copy *.h   $(%WWFLAT)\include 
 	 copy *.inc $(%WWFLAT)\include 
 	 copy *.cpp $(%WWFLAT)\srcdebug 
 	 copy *.asm $(%WWFLAT)\srcdebug 

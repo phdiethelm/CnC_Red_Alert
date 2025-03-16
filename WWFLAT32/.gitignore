@@ -1,0 +1,7 @@
+SRCDEBUG/*
+*.OBJ
+*.obj
+*.err
+*.pch
+*.lbc
+*.lnk

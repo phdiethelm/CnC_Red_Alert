@@ -155,7 +155,7 @@ all:	$(LIB_PATH)\$(PROJ_NAME).lib .SYMBOLIC
 #---------------------------------------------------------------------------
 $(LIB_PATH)\$(PROJ_NAME).lib: $(OBJECTS) objects.lbc
 	 copy *.h   $(%WWFLAT)\include 
-	 copy *.inc $(%WWFLAT)\include 
+	 #copy *.inc $(%WWFLAT)\include 
 	 copy *.cpp $(%WWFLAT)\srcdebug 
 	 copy *.asm $(%WWFLAT)\srcdebug 
 	$(LIB_CMD) $(LIB_CFG) $^@ @objects.lbc
