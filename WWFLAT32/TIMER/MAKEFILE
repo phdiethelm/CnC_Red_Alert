@@ -175,14 +175,14 @@ objects.lbc : $(OBJECTS)
 # The keyboard object files is also dependant on an IBN file which is 
 #   generated from KEYIREAL.ASM
 #---------------------------------------------------------------------------
-timereal.ibn: timereal.obj
-	%create	$^*.rsp
-	%append $^*.rsp $^&.obj
-	%append $^*.rsp $^&.exe
-	%append $^*.rsp $^&.map
-	tlink @$^*.rsp
-        tdstrip timereal.exe
-        ebn	timereal.exe
+#timereal.ibn: timereal.obj
+#	%create	$^*.rsp
+#	%append $^*.rsp $^&.obj
+#	%append $^*.rsp $^&.exe
+#	%append $^*.rsp $^&.map
+#	tlink @$^*.rsp
+#        tdstrip timereal.exe
+#        ebn	timereal.exe
 
 timereal.obj:	timereal.asm
 	tasm /zn /la /ml /m2 timereal.asm

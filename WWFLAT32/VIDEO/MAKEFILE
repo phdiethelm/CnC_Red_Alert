@@ -173,14 +173,14 @@ objects.lbc : $(OBJECTS)
 # The keyboard object files is also dependant on an IBN file which is 
 #   generated from KEYIREAL.ASM
 #---------------------------------------------------------------------------
-vesareal.ibn: vesareal.obj
-	%create	$^*.rsp
-	%append $^*.rsp $^&.obj
-	%append $^*.rsp $^&.exe
-	%append $^*.rsp $^&.map
-	tlink @$^*.rsp
-        tdstrip vesareal.exe
-        ebn	vesareal.exe
+#vesareal.ibn: vesareal.obj
+#	%create	$^*.rsp
+#	%append $^*.rsp $^&.obj
+#	%append $^*.rsp $^&.exe
+#	%append $^*.rsp $^&.map
+#	tlink @$^*.rsp
+#        tdstrip vesareal.exe
+#        ebn	vesareal.exe
 
 vesareal.obj:	vesareal.asm
 	tasm /zn /la /ml /m2 vesareal.asm
